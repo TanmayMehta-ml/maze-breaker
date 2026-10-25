@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; height: 100%; background: #0b0b0d; color: #eee;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  overflow: hidden; touch-action: none; user-select: none; -webkit-user-select: none;
+}
+#wrap { position: relative; height: 100%; display: flex; align-items: center; justify-content: center; }
+canvas { display: block; background: #141414; cursor: none; }
+#overlay {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  background: rgba(0, 0, 0, .6); backdrop-filter: blur(2px);
+}
+#overlay.hidden { display: none; }
+.card {
+  max-width: min(420px, 90vw); padding: 24px 28px; text-align: center;
+  background: #1c1c20; border: 2px solid #ff6f61; border-radius: 14px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, .6);
+}
+.card h1 { margin: 0 0 10px; font-size: 28px; letter-spacing: 2px; color: #ff6f61; }
+.card p { margin: 0 0 18px; line-height: 1.5; color: #ccc; white-space: pre-line; font-size: 15px; }
+.card button {
+  font: inherit; font-weight: 700; font-size: 18px; padding: 10px 28px; cursor: pointer;
+  color: #1c1c20; background: #ff6f61; border: 0; border-radius: 8px;
+}
+.card button:hover { background: #ff8a7e; }
